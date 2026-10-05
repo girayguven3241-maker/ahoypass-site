@@ -3,20 +3,89 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ahoypass</title>
+<title>Ahoypass — boating licence exam preparation</title>
+<meta name="description" content="Free offline app to prepare for recreational boating licence theory exams in 20 countries: lessons, explained questions and timed practice exams.">
+<meta property="og:title" content="Ahoypass — boating licence exam preparation">
+<meta property="og:description" content="Lessons, explained questions and timed practice exams for boating licence theory in 20 countries. Offline, no account.">
+<meta property="og:image" content="https://ahoypass.com/icon.png">
+<meta property="og:url" content="https://ahoypass.com/">
+<link rel="canonical" href="https://ahoypass.com/">
+<link rel="icon" href="icon.png">
 <style>
-body{font:16px/1.6 system-ui,sans-serif;max-width:640px;margin:0 auto;padding:32px 16px;color:#1b2430;background:#fff}
-@media (prefers-color-scheme:dark){body{background:#11161d;color:#e4e9f0}a{color:#8fc3ff}}
+:root{--bg:#fff;--fg:#1b2430;--muted:#556070;--card:#f2f6fa;--line:#d7dee7;--navy:#0f3d5e;--amber:#f1b625;--link:#0f5a8c}
+@media (prefers-color-scheme:dark){:root{--bg:#11161d;--fg:#e4e9f0;--muted:#9aa7b6;--card:#1a222c;--line:#2f3a48;--link:#8fc3ff}}
+*{box-sizing:border-box}
+body{margin:0;font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--fg);background:var(--bg)}
+a{color:var(--link)}
+.hero{background:linear-gradient(160deg,#0f3d5e,#1b5a85);color:#fff;padding:48px 16px}
+.hero .in{max-width:880px;margin:0 auto;display:flex;gap:28px;align-items:center}
+.hero img{width:112px;height:112px;border-radius:26px;flex:none;box-shadow:0 10px 30px rgba(0,0,0,.3)}
+.hero h1{margin:0 0 6px;font-size:2.2rem;line-height:1.15}
+.hero p{margin:0;font-size:1.1rem;color:#dce8f2}
+.hero .soon{display:inline-block;margin-top:14px;padding:6px 14px;border-radius:999px;background:var(--amber);color:#1b2430;font-weight:600;font-size:.95rem}
+main{max-width:880px;margin:0 auto;padding:32px 16px 48px}
+h2{font-size:1.3rem;margin:36px 0 12px}
+.feat{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;padding:0;margin:0;list-style:none}
+.feat li{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.feat b{display:block}
+.exams{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:8px;padding:0;margin:0;list-style:none}
+.exams li{border-bottom:1px solid var(--line);padding:6px 2px}
+.exams span{color:var(--muted);display:block;font-size:.9rem}
+.note{color:var(--muted);font-size:.92rem}
+footer{border-top:1px solid var(--line);padding:20px 16px;text-align:center;color:var(--muted);font-size:.92rem}
+@media (max-width:560px){.hero .in{flex-direction:column;text-align:center}.hero h1{font-size:1.8rem}}
 </style>
 </head>
 <body>
+<header class="hero"><div class="in">
+<img src="icon.png" alt="Ahoypass app icon">
+<div>
 <h1>Ahoypass</h1>
-<p>Offline exam preparation for recreational boating licences: lessons, explained questions and timed mock exams.</p>
-<ul>
-<li>Türkiye — ADB tekne ehliyeti ve KMT</li>
-<li>France — Permis bateau option côtière</li>
+<p>Prepare for your boating licence theory exam: short lessons, explained questions and timed practice exams. Offline, no account.</p>
+<span class="soon">Coming soon to Google Play</span>
+</div></div></header>
+
+<main>
+<h2>What you get</h2>
+<ul class="feat">
+<li><b>Lessons</b>A short, plain-language lesson for every topic.</li>
+<li><b>Explained questions</b>Every answer comes with the reason and the rule behind it.</li>
+<li><b>Practice exams</b>Timed, spread across topics like the real exam, without explanations or ads.</li>
+<li><b>Offline and private</b>Works without internet or an account. Your progress stays on your phone.</li>
 </ul>
-<p>Ahoypass is an independent app, not affiliated with any government authority or exam operator.</p>
-<p><a href="privacy.html">Privacy policy / Gizlilik politikası / Politique de confidentialité</a></p>
+
+<h2>Exams in the app</h2>
+<ul class="exams">
+<li>Australia<span>Boat licence theory</span></li>
+<li>Canada<span>Pleasure Craft Operator Card (PCOC)</span></li>
+<li>Croatia<span>Voditelj brodice</span></li>
+<li>Denmark<span>Duelighedsbevis</span></li>
+<li>Finland<span>Veneilijän koe</span></li>
+<li>France<span>Permis bateau côtier</span></li>
+<li>Germany<span>Sportbootführerschein Binnen and See</span></li>
+<li>Greece<span>Recreational boat operator</span></li>
+<li>Ireland<span>Boating theory</span></li>
+<li>Italy<span>Patente nautica entro 12 miglia</span></li>
+<li>Netherlands<span>Klein Vaarbewijs</span></li>
+<li>New Zealand<span>Boating theory</span></li>
+<li>Norway<span>Båtførerprøven</span></li>
+<li>Poland<span>Patent sternika</span></li>
+<li>Portugal<span>Navegador de recreio</span></li>
+<li>Spain<span>Patrón de embarcaciones de recreo</span></li>
+<li>Sweden<span>Förarbevis för båt</span></li>
+<li>Türkiye<span>ADB tekne ehliyeti and KMT</span></li>
+<li>United Kingdom<span>Boating theory</span></li>
+<li>United States<span>Boater safety</span></li>
+</ul>
+<p class="note">Study material is in the language of each exam. The app is free and supported by ads; there are no ads during practice exams.</p>
+
+<h2>Please note</h2>
+<p class="note">Ahoypass is an independent practice app. It does not issue licences or certificates and is not affiliated with any government authority or exam operator. Questions and explanations are our own, except in Germany, where the officially published question catalogue (ELWIS) is used. Exam rules change, so always check the current rules of your authority.</p>
+
+<h2>Contact</h2>
+<p>Found a mistake or have a question? Write to <a href="mailto:ahoypass.app@gmail.com">ahoypass.app@gmail.com</a>. In the app you can also use "Report an error" on any question.</p>
+</main>
+
+<footer><a href="privacy.html">Privacy policy · Gizlilik politikası · Politique de confidentialité · Datenschutzerklärung</a></footer>
 </body>
 </html>
